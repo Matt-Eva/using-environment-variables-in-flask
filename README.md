@@ -9,6 +9,9 @@ A common way to handle this problem is to create `.env` files, which store these
 secrets in "Environment Variables". The `.env` files are then added to a
 `.gitignore` file, which prevents them from being pushed up to GitHub.
 
+**Note**: I've left my `.env` file in this repository as an example. You will
+most likely not want to push your own `.env` files to your repository.
+
 Here's what a `.env` file might look like:
 
 ```bash
@@ -39,9 +42,6 @@ won't be adding those files to our production environment - we'll likely take
 care of that setup when configuring our production environment ourselves,
 whether through a cloud provider or manually. That means `.env` files are only
 useful to us in development mode.
-
-**Note**: I've left my `.env` file in this repository as an example. You will
-most likely not want to push your own `.env` files to your repository.
 
 ## python-dotenv
 
