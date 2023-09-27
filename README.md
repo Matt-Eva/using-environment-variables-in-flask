@@ -37,8 +37,8 @@ os.environ.get('TEST')
 
 ## Development vs. Production
 
-Since we won't be using adding `.env` files to our repositories, we also likely
-won't be adding those files to our production environment - we'll likely take
+Since we won't be adding `.env` files to our remote repositories, we also likely
+won't be adding those files to our production environment - we'll usually take
 care of that setup when configuring our production environment ourselves,
 whether through a cloud provider or manually.
 
@@ -68,7 +68,7 @@ from dotenv import load_dotenv
 load_dotenv()
 ```
 
-By invoking the load_dotenv() function, we give ourselves the ability to access
+By invoking the `load_dotenv()` function, we give ourselves the ability to access
 environment variables via `os.environ.get()` throughout our code when working in
 a development environment.
 
