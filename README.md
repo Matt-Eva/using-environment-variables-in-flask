@@ -40,9 +40,15 @@ os.environ.get('TEST')
 Since we won't be using adding `.env` files to our repositories, we also likely
 won't be adding those files to our production environment - we'll likely take
 care of that setup when configuring our production environment ourselves,
-whether through a cloud provider or manually. That means `.env` files are only
-useful to us in development mode.
+whether through a cloud provider or manually.
 
+For example, here's the screen where you can set environment variables for the Render hosting platform:
+
+![image (3)](https://github.com/Matt-Eva/using-environment-variables-in-flask/assets/89106805/80c8dfe5-7fff-4c11-a95d-a77ee9621593)
+
+> Note: this was posted 2023-09-27 - if you are viewing this at a substantially later time, Render's layout may have changed.
+
+That means `.env` files are mostly useful to us in development mode.
 ## python-dotenv
 
 However, using the `os.environ.get()` method won't work with `.env` files right
