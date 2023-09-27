@@ -40,7 +40,7 @@ for key, value in os.environ.items():
 ```
 
 If you run this commands on your own computer, you'll probably see A LOT of
-values printing out. Those are all the different variables your Operating system
+values printing out. Those are all the different variables your Operating System
 is using!
 
 You can also just access a single environment variable by running
