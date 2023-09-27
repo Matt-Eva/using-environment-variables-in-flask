@@ -1,8 +1,13 @@
 from flask import Flask
 import os
 
-
 app = Flask(__name__)
+
+print(os.environ)
+
+for key, value in os.environ.items():
+    print(key, value)
+
 print(os.environ.get('TEST'))
 
 @app.route("/")
