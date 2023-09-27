@@ -27,6 +27,8 @@ We can import the `os` module in our code, use it to access a Python dictionary 
 
 Ex:
 ```Python
+import os
+
 print(os.environ)
 # prints a Python dictionary containing the environment variables as key, value pairs
 
