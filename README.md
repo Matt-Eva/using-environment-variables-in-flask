@@ -21,10 +21,21 @@ TEST=test
 ## Using os.eviron
 
 Python allows us to access environment variables set for our application using
-the `os.environ` module.
+the `os` module.
 
-We can import the `os` module in our code, then tell it to access specific
-environment variables using the built in `.get()` method. If this method does
+We can import the `os` module in our code, use it to access a Python dictionary storing all accessible environment variables by running `os.environ`.
+
+Ex:
+```Python
+print(os.environ)
+# prints a Python dictionary containing the environment variables as key, value pairs
+
+for key, value in os.environ.items():
+    print(key, value)
+# iterates over the Python dictionary and prints the corresponding key / values
+```
+
+You can also just access a single environment variable by running `os.environ.get('ENV_VARIABLE')` using Python's built in dictionary `.get()` method. If this method does
 not find a variable with the specified name, it will return `None`.
 
 Ex:
